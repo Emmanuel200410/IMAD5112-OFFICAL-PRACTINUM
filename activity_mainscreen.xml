@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Day (yyyy-MM-dd)"
+        android:inputType="date"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/input_min_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min Temp (Â°C)"
+        android:inputType="number"
+        android:layout_below="@id/input_day"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/input_max_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Temp (Â°C)"
+        android:inputType="number"
+        android:layout_below="@id/input_min_temp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/input_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Condition (e.g. Sunny)"
+        android:inputType="text"
+        android:layout_below="@id/input_max_temp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_detailed_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detailed View"
+        android:layout_below="@id/input_condition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:layout_below="@id/btn_detailed_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
