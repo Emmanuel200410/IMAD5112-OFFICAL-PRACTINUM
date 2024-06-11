@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 maxTemps.add(maxTemp)
                 conditions.add(condition)
 
-                val intent = Intent(this, detailedviewscreen::class.java)
+                val intent = Intent(this, DetailedViewScreen::class.java)
                 intent.putStringArrayListExtra("days", ArrayList(days))
                 intent.putIntegerArrayListExtra("minTemps", ArrayList(minTemps))
                 intent.putIntegerArrayListExtra("maxTemps", ArrayList(maxTemps))
@@ -62,8 +62,4 @@ class MainActivity : AppCompatActivity() {
             conditions.clear()
         }
     }
-}
-
-class detailedviewscreen {
-
 }

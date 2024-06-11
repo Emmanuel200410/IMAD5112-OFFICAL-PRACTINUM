@@ -1,7 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".DetailedViewScreen">
 
     <TextView
         android:id="@+id/detailed_info"
@@ -29,20 +32,5 @@
         android:layout_below="@id/average_temp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true" />
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".DetailedViewScreen">
-
-        <TextView
-            android:id="@+id/details_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Weather Details"
-            android:textSize="18sp"
-            android:padding="16dp" />
-    </LinearLayout>
 
 </RelativeLayout>
